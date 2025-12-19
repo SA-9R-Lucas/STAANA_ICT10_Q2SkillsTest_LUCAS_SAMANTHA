@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Club Information</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url(brownbg.jpg);
+            color: #4a1c1c; /* Dark maroon text */
+        }
+        h1 {
+            color: #423131; /* Maroon */
+            text-align: center;
+            border-bottom: 2px solid #857373;
+            padding-bottom: 10px;
+        }
+        select, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #4C2B0B
+            ;
+            border-radius: 4px;
+            background-color: white;
+            color: #4a1c1c;
+        }
+        button {
+            background-color: #4C2B0B;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #600000; /* Darker maroon */
+        }
+        #club-info {
+            background-color: #fff0f0; /* Very light maroon tint */
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            border-left: 4px solid #4C2B0B;
+            color: #4a1c1c;
+        }
+        label {
+            font-weight: bold;
+            color: #4C2B0B;
+        }
+        option {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>School Club Information</h1>
+    
+    <label for="club-select">Select a club:</label>
+    <select id="club-select">
+        <option value="">-- Select a club --</option>
+        <option value="creatives">Creatives Club</option>
+        <option value="theater">Theater Club</option>
+        <option value="writing">Writers Club</option>
+        <option value="debate">Debate Club</option>
+        <option value="baking">Baking Club</option>
+    </select>
+    
+    <button id="show-info" py-click="show_club_info">Show Club Information</button>
+    
+    <pre id="club-info"></pre>
+    <script type="py" src="main.py"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Club Information</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f3f3; /* Light maroon tint */
+            color: #4a1c1c; /* Dark maroon text */
+        }
+        h1 {
+            color: #4C2B0B /* Maroon */
+            text-align: center;
+            border-bottom: 2px solid #4C2B0B;
+            padding-bottom: 10px;
+        }
+        select, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #4C2B0B;
+            border-radius: 4px;
+            background-color: white;
+            color: #B7957F;
+        }
+        button {
+            background-color: #4C2B0B;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #B7957F; /* Darker maroon */
+        }
+        #club-info {
+            background-color: #fff0f0; /* Very light maroon tint */
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            border-left: 4px solid #4C2B0B;
+            color: #B7957F;
+        }
+        label {
+            font-weight: bold;
+            color: #4C2B0B;
+        }
+        option {
+            padding: 5px;
+        }
+    </style>
